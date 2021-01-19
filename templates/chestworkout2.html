@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+ {% block style %}
+ body{
+ color:red;
+ }
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+{% endblock %}
+
+
+{% block body %}
+        <div class="card" style="width: 18rem;">
+  <img src="/static/css/images15.jpg" class="card-img-top" alt="Sumo Deadlift" style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">Cable Flys</h5>
+    <p class="card-text">See Reps and sets below for muscle building and Strength building</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">1 Set 15-20 reps</li>
+    <li class="list-group-item">2 Set 12-15 reps</li>
+    <li class="list-group-item">3 set 8-12 reps</li>
+    <li class="list-group-item">reps until failure</li>
+  </ul>
+
+</div>
+
+ <div class="card" style="width: 18rem; margin-left:20em; bottom:545px;">
+  <img src="/static/css/images16.jpg" class="card-img-top" alt="Sumo Deadlift" style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">Lower Cable Flys</h5>
+    <p class="card-text">See Reps and sets below for muscle building and Strength building</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">1 Set 15-20 reps</li>
+    <li class="list-group-item">2 Set 12-15 reps</li>
+    <li class="list-group-item">3 set 8 to 12 reps</li>
+    <li class="list-group-item">reps until failure</li>
+  </ul>
+
+</div>
+
+<div class="card" style="width: 18rem; margin-left:40em; bottom:1090px;">
+  <img src="/static/css/images17.jpg" class="card-img-top" alt="Sumo Deadlift" style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">Machine Flys</h5>
+    <p class="card-text">See Reps and sets below for muscle building and Strength building</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">1 Set 12-15 reps</li>
+    <li class="list-group-item">2 Set 10-12 reps</li>
+    <li class="list-group-item">3 set 8 to 10 reps</li>
+    <li class="list-group-item">reps until failure</li>
+  </ul>
+
+</div>
+
+<div class="card" style="width: 18rem; margin-left:60em; bottom:1635px;">
+  <img src="/static/css/images18.jpg" class="card-img-top" alt="Sumo Deadlift" style="height: 200px;">
+  <div class="card-body">
+    <h5 class="card-title">Machine Press</h5>
+    <p class="card-text">See Reps and sets below for muscle building and Strength building</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">1 Set 12-15 reps</li>
+    <li class="list-group-item">2 Set 10-12 reps</li>
+    <li class="list-group-item">3 set 8 to 10 reps</li>
+    <li class="list-group-item">reps until failure</li>
+  </ul>
+
+</div>
+
+<form action="/chesth", method="post">
+        <input  style="margin: 2px 2px;  position:absolute; top:750px; left:582px;" name="chesthome" type="submit" class="btn btn-lg btn-primary" value="Chest Section">
+
+
+
+        </form>
+
+    {% endblock %}
