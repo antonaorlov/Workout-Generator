@@ -6,7 +6,7 @@ from flask import Flask, flash, jsonify, redirect, render_template, request, ses
 from flask_session import Session
 from tempfile import mkdtemp
 
-app=Flask(__name__, static_url_path='/static')
+app=Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():

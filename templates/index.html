@@ -1,11 +1,15 @@
 {% extends "layout.html" %}
 
 {% block body %}
-
+        <div class="wrapper">
+        
         <form action="/hello", method="post">
-        <input  style="margin: 100px 2px;  position:absolute; right:690px; vertical-align: middle" name="button" type="submit" class="btn btn-lg btn-primary" value="Random Body Part">
+        <input  style="position:absolute; left:50%; transform:translateX(-50%);
+        margin:auto;text-align:center;bottom:80%;
+         " name="button" type="submit" class="btn btn-lg btn-primary" value="Random Body Part">
 
 
 
         </form>
+        </div>
 {% endblock %}
