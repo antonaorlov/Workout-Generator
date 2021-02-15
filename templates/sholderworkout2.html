@@ -32,6 +32,18 @@ body {
 
 
 {% block body %}
+
+
+<div class="wrapper">
+<form action="/shoulderh", method="post">
+        <input  style="position:absolute; left:50%; transform:translateX(-50%);
+        margin:auto;text-align:center;bottom:11%;" name="shoulderhome" type="submit" class="btn btn-lg btn-primary" value="Shoulder Section">
+
+
+
+        </form>
+        </div>
+
         <div class="card" style="width: 18rem;">
   <img src="/static/css/images31.jpg" class="card-img-top" alt="Sumo Deadlift" style="height: 200px;">
   <div class="card-body">
@@ -92,11 +104,5 @@ body {
 
 </div>
 
-<form action="/shoulderh", method="post">
-        <input  style="margin: 2px 2px;  position:absolute; top:750px; right:700px;" name="shoulderhome" type="submit" class="btn btn-lg btn-primary" value="Shoulder Section">
-
-
-
-        </form>
 
     {% endblock %}

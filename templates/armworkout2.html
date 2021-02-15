@@ -32,6 +32,19 @@ body {
 
 
 {% block body %}
+
+
+
+<div class="wrapper">
+<form action="/armh", method="post">
+        <input  style="position:absolute; left:50%; transform:translateX(-50%);
+        margin:auto;text-align:center;bottom:11%;" name="armhome" type="submit" class="btn btn-lg btn-primary" value="Arm Section">
+
+
+
+        </form>
+        </div>
+
       <div class="card" style="width: 18rem;">
   <img src="/static/css/images.jpg" class="card-img-top" alt="bicept curl">
   <div class="card-body">
@@ -92,11 +105,6 @@ body {
 
 </div>
 
-<form action="/armh", method="post">
-        <input  style="margin: 2px 2px;  position:absolute; top:750px; right:725px;" name="armhome" type="submit" class="btn btn-lg btn-primary" value="Arm Section">
 
-
-
-        </form>
 
     {% endblock %}
